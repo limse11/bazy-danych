@@ -35,96 +35,117 @@
   </div>
 
   <div class="section" id="one">
-    <h1>Lorem ipsum</h1>
+    <h1>Relacyjna baza danych</h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est enim, in quo sit cupiditas, quin recte cupidus dici possit? Duo Reges: constructio interrete. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. Quid ei reliquisti,
-      nisi te, quoquo modo loqueretur, intellegere, quid diceret? Fortasse id optimum, sed ubi illud: Plus semper voluptatis? Nihilo magis.
+      Relacyjna baza danych to rodzaj bazy danych, który pozwala przechowywać powiązane ze sobą elementy danych i zapewnia do nich dostęp. Relacyjne bazy danych są oparte na modelu relacyjnym — jest to prosty i intuicyjny sposób przedstawiania danych w tabelach. W relacyjnej bazie danych każdy wiersz tabeli jest rekordem z unikatowym identyfikatorem nazywanym kluczem. Kolumny tabeli zawierają atrybuty danych, a każdy rekord zawiera zwykle wartość dla każdego atrybutu, co ułatwia ustalenie relacji między poszczególnymi elementami rekordu.
       <br><br>
-      Cuius quidem, quoniam Stoicus fuit, sententia condemnata mihi videtur esse inanitas ista verborum. Sed mehercule pergrata mihi oratio tua. Qui autem diffidet perpetuitati bonorum suorum, timeat necesse est, ne aliquando amissis illis sit miser.
-      Nunc omni virtuti vitium contrario nomine opponitur. Nunc dicam de voluptate, nihil scilicet novi, ea tamen, quae te ipsum probaturum esse confidam.
-      <br><br>
-      Quid, si reviviscant Platonis illi et deinceps qui eorum auditores fuerunt, et tecum ita loquantur? Quae tamen a te agetur non melior, quam illae sunt, quas interdum optines. Ergo id est convenienter naturae vivere, a natura discedere. Pisone
-      in eo gymnasio, quod Ptolomaeum vocatur, unaque nobiscum Q. Duo enim genera quae erant, fecit tria. Non quam nostram quidem, inquit Pomponius iocans;
+      Model relacyjny oznacza, że logiczne struktury danych — tabele danych, widoki i indeksy — są oddzielone od fizycznych struktur pamięci. Dzięki temu administratorzy baz danych mogą zarządzać fizycznym przechowywaniem danych bez wpływu na dostęp do tych danych jako struktury logicznej. Na przykład zmiana nazwy pliku bazy danych nie powoduje zmiany nazw przechowywanych w nim tabel.
+
     </p>
     <p class="p2">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est enim, in quo sit cupiditas, quin recte cupidus dici possit? Duo Reges: constructio interrete. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. Quid ei reliquisti,
-      nisi te, quoquo modo loqueretur, intellegere, quid diceret? Fortasse id optimum, sed ubi illud: Plus semper voluptatis? Nihilo magis.
+      Rozróżnienie między strukturą logiczną a fizyczną dotyczy również operacji na bazach danych, które są wyraźnie zdefiniowanymi działaniami umożliwiającymi aplikacjom manipulowanie danymi i strukturami bazy danych. Operacje logiczne umożliwiają aplikacji określenie potrzebnej zawartości, a operacje fizyczne ustalają, w jaki sposób należy uzyskać dostęp do danych, a następnie wykonują to zadanie.
       <br><br>
-      Cuius quidem, quoniam Stoicus fuit, sententia condemnata mihi videtur esse inanitas ista verborum. Sed mehercule pergrata mihi oratio tua. Qui autem diffidet perpetuitati bonorum suorum, timeat necesse est, ne aliquando amissis illis sit miser.
-      Nunc omni virtuti vitium contrario nomine opponitur. Nunc dicam de voluptate, nihil scilicet novi, ea tamen, quae te ipsum probaturum esse confidam.
-      <br><br>
-      Quid, si reviviscant Platonis illi et deinceps qui eorum auditores fuerunt, et tecum ita loquantur? Quae tamen a te agetur non melior, quam illae sunt, quas interdum optines. Ergo id est convenienter naturae vivere, a natura discedere. Pisone
-      in eo gymnasio, quod Ptolomaeum vocatur, unaque nobiscum Q. Duo enim genera quae erant, fecit tria. Non quam nostram quidem, inquit Pomponius iocans;
+      Prosty, ale silny model relacyjny jest używany przez różnego rodzaju i różnej wielkości przedsiębiorstwa do zaspokajania szerokiej gamy potrzeb informacyjnych. Relacyjne bazy danych służą do śledzenia zapasów, przetwarzania transakcji w handlu elektronicznym, zarządzania ogromnymi ilościami kluczowych informacji o klientach itd. Relacyjna baza danych może służyć do zaspokajania dowolnych potrzeb informacyjnych w sytuacjach, w których elementy danych są ze sobą powiązane i muszą być zarządzane w sposób bezpieczny, oparty na regułach i spójny.
     </p>
   </div>
   <div class="section-b">
     <h1>
-      Lorem ipsum
+      Tabele
     </h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est enim, in quo sit cupiditas, quin recte cupidus dici possit? Duo Reges: constructio interrete. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. Quid ei reliquisti,
-      nisi te, quoquo modo loqueretur, intellegere, quid diceret? Fortasse id optimum, sed ubi illud: Plus semper voluptatis? Nihilo magis.
-      <br><br>
-      Cuius quidem, quoniam Stoicus fuit, sententia condemnata mihi videtur esse inanitas ista verborum. Sed mehercule pergrata mihi oratio tua. Qui autem diffidet perpetuitati bonorum suorum, timeat necesse est, ne aliquando amissis illis sit miser.
-      Nunc omni virtuti vitium contrario nomine opponitur. Nunc dicam de voluptate, nihil scilicet novi, ea tamen, quae te ipsum probaturum esse confidam.
+      Tabela (relacja) to wydzielony logicznie zbiór danych, zorganizowanych w formie tabeli składającej się z wierszy dzielonych na kolumny. Jest to obiekt teoretyczny i nie należy go mylić z jej graficzną reprezentacją, czy miejscem zajmowanym w pamięci komputera. W zależności od typu bazy danych wewnętrzna organizacja podziału danych na kolumny i wiersze jest różna i często umowna.
+      Pojedyncza tabela może być reprezentacją pewnej encji (np. książek, mieszkań, ludzi), relacji między nimi, albo może stanowić zawartość całej bazy danych. Pojedynczy wiersz tabeli nazywany jest rekordem i stanowi najczęściej zbiór danych o pojedynczym obiekcie (ew. grupie obiektów).
     </p>
   </div>
   <div class="section-a" id="two">
-    <h1>Lorem ipsum</h1>
+    <h1>Kwerendy</h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est enim, in quo sit cupiditas, quin recte cupidus dici possit? Duo Reges: constructio interrete. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. Quid ei reliquisti,
-      nisi te, quoquo modo loqueretur, intellegere, quid diceret? Fortasse id optimum, sed ubi illud: Plus semper voluptatis? Nihilo magis.
+      Zapytanie (niekiedy również kwerenda) – czynność polegająca na zbieraniu lub poszukiwaniu informacji w bazach danych.
       <br><br>
-      Cuius quidem, quoniam Stoicus fuit, sententia condemnata mihi videtur esse inanitas ista verborum. Sed mehercule pergrata mihi oratio tua. Qui autem diffidet perpetuitati bonorum suorum, timeat necesse est, ne aliquando amissis illis sit miser.
-      Nunc omni virtuti vitium contrario nomine opponitur. Nunc dicam de voluptate, nihil scilicet novi, ea tamen, quae te ipsum probaturum esse confidam.
+      Użytkownik serwera baz danych (program lub osoba) wysyła do niego zapytanie, na które serwer odpowiada przesyłając oczekiwane dane, czyli wynik zapytania. Zapytania mogą mieć na celu wyłącznie pobranie danych (tzw. zapytania wybierające), jak i usuwanie, dodawanie czy modyfikację danych (tzw. zapytania funkcjonalne).
       <br><br>
-      Quid, si reviviscant Platonis illi et deinceps qui eorum auditores fuerunt, et tecum ita loquantur? Quae tamen a te agetur non melior, quam illae sunt, quas interdum optines. Ergo id est convenienter naturae vivere, a natura discedere. Pisone
-      in eo gymnasio, quod Ptolomaeum vocatur, unaque nobiscum Q. Duo enim genera quae erant, fecit tria. Non quam nostram quidem, inquit Pomponius iocans;
+      Przykładem języka operującego na zapytaniach w bazach danych jest bardzo popularny SQL (ang. Structured Query Language), wspierany jako standard przez ANSI. Inne, mniej popularne, to np. QBE (ang. Query by Example) czy XQuery.
     </p>
     <p class="p2-a">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est enim, in quo sit cupiditas, quin recte cupidus dici possit? Duo Reges: constructio interrete. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. Quid ei reliquisti,
-      nisi te, quoquo modo loqueretur, intellegere, quid diceret? Fortasse id optimum, sed ubi illud: Plus semper voluptatis? Nihilo magis.
+      Projektując bazę danych, umieszczamy w tabelach tylko wybrane dane. Aby korzystać z tych danych, trzeba określić sposób ich wybierania i przetwarzania. W systemie relacyjnych baz danych czynności te są wykonywane za pomocą kwerend. Do konstruowania kwerend i kierowania ich do bazy danych można w programie Access używać języka SQL (ang. Structured Query Language) lub QBE (ang. Query By Example).
       <br><br>
-      Cuius quidem, quoniam Stoicus fuit, sententia condemnata mihi videtur esse inanitas ista verborum. Sed mehercule pergrata mihi oratio tua. Qui autem diffidet perpetuitati bonorum suorum, timeat necesse est, ne aliquando amissis illis sit miser.
-      Nunc omni virtuti vitium contrario nomine opponitur. Nunc dicam de voluptate, nihil scilicet novi, ea tamen, quae te ipsum probaturum esse confidam.
+      Projektując kwerendę, wybieramy tabele oraz pola, które będą brały udział w kwerendzie, określamy kryteria wyboru rekordów oraz sposób ich wyświetlania.
       <br><br>
-      Quid, si reviviscant Platonis illi et deinceps qui eorum auditores fuerunt, et tecum ita loquantur? Quae tamen a te agetur non melior, quam illae sunt, quas interdum optines. Ergo id est convenienter naturae vivere, a natura discedere. Pisone
-      in eo gymnasio, quod Ptolomaeum vocatur, unaque nobiscum Q. Duo enim genera quae erant, fecit tria. Non quam nostram quidem, inquit Pomponius iocans;
+      Kwerenda może mieć postać żądania wyników danych z bazy danych, wykonania działania na danych lub obie te postacie jednocześnie. Kwerenda pozwala uzyskać odpowiedź na proste zapytanie, przeprowadzać obliczenia, łączyć dane z różnych tabel oraz dodawać, zmieniać lub usuwać dane z bazy danych.
     </p>
   </div>
   <div class="section-b">
     <h1>
-      Lorem ipsum
+      Raporty
     </h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est enim, in quo sit cupiditas, quin recte cupidus dici possit? Duo Reges: constructio interrete. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. Quid ei reliquisti,
-      nisi te, quoquo modo loqueretur, intellegere, quid diceret? Fortasse id optimum, sed ubi illud: Plus semper voluptatis? Nihilo magis.
-      <br><br>
-      Cuius quidem, quoniam Stoicus fuit, sententia condemnata mihi videtur esse inanitas ista verborum. Sed mehercule pergrata mihi oratio tua. Qui autem diffidet perpetuitati bonorum suorum, timeat necesse est, ne aliquando amissis illis sit miser.
-      Nunc omni virtuti vitium contrario nomine opponitur. Nunc dicam de voluptate, nihil scilicet novi, ea tamen, quae te ipsum probaturum esse confidam.
+      Raport to obiekt bazy danych przydatny do prezentowania informacji z bazy danych w następujących przypadkach: Prezentacja lub rozpowszechnianie podsumowania danych. Archiwizacja migawek danych. Udostępnianie szczegółowych informacji na temat poszczególnych rekordów.
     </p>
   </div>
   <div class="section" id="one">
-    <h1>Lorem ipsum</h1>
+    <h1>Klucze</h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est enim, in quo sit cupiditas, quin recte cupidus dici possit? Duo Reges: constructio interrete. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. Quid ei reliquisti,
-      nisi te, quoquo modo loqueretur, intellegere, quid diceret? Fortasse id optimum, sed ubi illud: Plus semper voluptatis? Nihilo magis.
+      Jeśli zbiór tworzący klucz jest jednoelementowy to mówi się wtedy o kluczu prostym, w przeciwnym przypadku jest to klucz złożony.
       <br><br>
-      Cuius quidem, quoniam Stoicus fuit, sententia condemnata mihi videtur esse inanitas ista verborum. Sed mehercule pergrata mihi oratio tua. Qui autem diffidet perpetuitati bonorum suorum, timeat necesse est, ne aliquando amissis illis sit miser.
-      Nunc omni virtuti vitium contrario nomine opponitur. Nunc dicam de voluptate, nihil scilicet novi, ea tamen, quae te ipsum probaturum esse confidam.
+      <b>Klucz podstawowy</b> - jest to klucz wybrany spośród kluczy kandydujących i służy do jednoznacznej identyfikacji
+      każdego wiersza w tabeli. Nie może zawieraa wartości NULL. Takim kluczem może być np. nr albumu studenta
+      lub nr PESEL. Istnieje także możliwość utworzenia sztucznego klucza, który będzie nadawany automatycznie
+      poprzez system bazy danych.
       <br><br>
-      Quid, si reviviscant Platonis illi et deinceps qui eorum auditores fuerunt, et tecum ita loquantur? Quae tamen a te agetur non melior, quam illae sunt, quas interdum optines. Ergo id est convenienter naturae vivere, a natura discedere. Pisone
-      in eo gymnasio, quod Ptolomaeum vocatur, unaque nobiscum Q. Duo enim genera quae erant, fecit tria. Non quam nostram quidem, inquit Pomponius iocans;
+      <b>Klucz obcy</b> - ten typ klucza wykorzystywany jest do tworzenia relacji pomiędzy parą tabel. Wartośa klucza obcego w jednej tabeli (tabeli zależnej) musi korespondować do wartości klucza podstawowego lub kandydującego w drugiej tabeli (tabeli nadrzędnej). Klucz obcy wymusza więzi integralności. Przy ustalaniu zależności pomiędzy tabelami można ustalić jakie działania bedą podejmowane w przypadku aktualizacji lub usuwaniu rekordu z tabeli nadrzędnej.
+      <br><br>
     </p>
     <p class="p2">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est enim, in quo sit cupiditas, quin recte cupidus dici possit? Duo Reges: constructio interrete. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. Quid ei reliquisti,
-      nisi te, quoquo modo loqueretur, intellegere, quid diceret? Fortasse id optimum, sed ubi illud: Plus semper voluptatis? Nihilo magis.
+      <b>Klucz kandydujący</b> - w relacji może znajdować się wiele atrybutów, które mogą być unikalne i w ten sposób mogą jednoznacznie identyfikować każdą krotke. Spośród kluczy kandydujących wybiera się klucz podstawowy, a pozostałe klucze nazywa sie kluczami alternatwnymi (alternate key).
       <br><br>
-      Cuius quidem, quoniam Stoicus fuit, sententia condemnata mihi videtur esse inanitas ista verborum. Sed mehercule pergrata mihi oratio tua. Qui autem diffidet perpetuitati bonorum suorum, timeat necesse est, ne aliquando amissis illis sit miser.
-      Nunc omni virtuti vitium contrario nomine opponitur. Nunc dicam de voluptate, nihil scilicet novi, ea tamen, quae te ipsum probaturum esse confidam.
+      <b>Klucz unikalny</b> - jest to wartość, która w obrębie jednej tabeli jest niepowtarzalna, tak więc nie mogą pojawić się dwa wiersze o tej samej wartości unikalnej. Takim kluczem może być np. PESEL lub nr ISBN dla książki.
       <br><br>
-      Quid, si reviviscant Platonis illi et deinceps qui eorum auditores fuerunt, et tecum ita loquantur? Quae tamen a te agetur non melior, quam illae sunt, quas interdum optines. Ergo id est convenienter naturae vivere, a natura discedere. Pisone
-      in eo gymnasio, quod Ptolomaeum vocatur, unaque nobiscum Q. Duo enim genera quae erant, fecit tria. Non quam nostram quidem, inquit Pomponius iocans;
+      Dla kolumny można wymusić to, by była ona unikalna poprzez ustalenie indeksu unikalnego UNIQUE.
+      <br><br>
+      <b>Klucz alternatywny</b> - jest to każdy klucz, który nie został wybrany jako klucz podstawowy.
+    </p>
+  </div>
+  <div class="section-b">
+    <h1>
+      Relacje
+    </h1>
+    <p>
+      W relacyjnej bazie danych relacje umożliwiają zapobieganie nadmiarowym danym. Na przykład, jeśli projektuje się bazę danych, która będzie śledzić informacje o książkach, może pojawić się tabela o nazwie „Tytuły”, która przechowuje informacje o każdej książce, takie jak tytuł książki, data publikacji i wydawca. Istnieją również informacje, które można przechowywać o wydawcy, takie jak numer telefonu wydawcy, adres i kod pocztowy. Jeśli wszystkie te informacje mają być przechowywane w tabeli „Tytuły”, numer telefonu wydawcy zostanie zduplikowany dla każdego tytułu drukowanego przez wydawcę.
+      <br><br>
+      Lepszym rozwiązaniem jest przechowywanie informacji wydawcy tylko jeden raz, w osobnej tabeli, którą będziemy nazywać „Wydawcy”. Następnie należy umieścić wskaźnik w tabeli „Tytuły”, który odwołuje się do wpisu w tabeli „Wydawcy”.
+    </p>
+  </div>
+  <div class="section-a" id="two">
+    <h1>Rodzaje relacji tabel</h1>
+    <p>
+      Relacja działa przez dopasowywanie danych w kolumnach kluczy, zwykle kolumn (lub pól), które mają taką samą nazwę w obu tabelach. W większości przypadków relacja łączy klucz podstawowy lub kolumnę unikatowego identyfikatora dla każdego wiersza z jednej tabeli z polem w innej tabeli. Kolumna w drugiej tabeli jest znana jako „klucz obcy”. Na przykład, jeśli chce się śledzić sprzedaż każdego tytułu książki, należy utworzyć relację między kolumną klucza podstawowego (nazwijmy ją title_ID) w tabeli „Tytuły” a kolumną w tabeli „Sprzedaż”, która nosi nazwę title_ID. Kolumna title_ID w tabeli „Sprzedaż” jest kluczem obcym.
+      <br><br>
+      Istnieją trzy rodzaje relacji między tabelami. Rodzaj tworzonej relacji zależy od sposobu definiowania powiązanych kolumn.
+    <p class="p2-a">
+      Relacja <b>jeden-do-wielu</b> jest najczęstszym rodzajem relacji. W tego rodzaju relacji wiersz w tabeli A może mieć wiele pasujących wierszy w tabeli B. Jednak wiersz w tabeli B może mieć tylko jeden pasujący wiersz w tabeli A. Na przykład tabele „Wydawcy” i „Tytuły” mają relację jeden do wielu. Oznacza to, że każdy wydawca produkuje wiele tytułów. Ale każdy tytuł pochodzi tylko od jednego wydawcy.
+      <br><br>
+      Relacja <b>jeden-do-wielu</b> jest tworzona, jeśli tylko jedna z powiązanych kolumn jest kluczem podstawowym lub ma unikatowe ograniczenie.
+      <br><br>
+      W oknie relacji w programie Access strona klucza podstawowego relacji <b>jeden-do-wielu</b> jest oznaczona przez liczbę 1. Strona klucza obcego relacji jest oznaczona symbolem nieskończoności.
+    </p>
+  </div>
+  <div class="section-b">
+    <h1>
+      Definiowanie relacji
+    </h1>
+    <p>
+      Podczas tworzenia relacji między tabelami pola pokrewne nie muszą mieć tych samych nazw. Pola pokrewne muszą jednak mieć ten sam typ danych, chyba że pole klucza podstawowego jest polem Autonumerowania. Pole Autonumerowania można dopasować do pola Liczba tylko wtedy, gdy właściwość RozmiarPola obu pasujących pól jest taka sama. Na przykład można dopasować pole Autonumerowania i pole Liczba, jeśli właściwość RozmiarPola dla obu pól to Długa liczba całkowita. Nawet wtedy, gdy oba pasujące pola są polami liczby, muszą mieć takie samo ustawienie właściwości RozmiarPola.
+    </p>
+  </div>
+  <div class="section-a" id="two">
+    <h1>Rodzaje relacji tabel</h1>
+    <p>
+      W relacji <b>wiele-do-wielu</b> wiersz w tabeli A może mieć wiele pasujących wierszy w tabeli B i odwrotnie. Taką relację można utworzyć, definiując trzecią tabelę, która jest nazywana tabelą skrzyżowań. Klucz podstawowy tabeli skrzyżowań składa się z kluczy obcych z tabeli A i tabeli B. Na przykład tabela „Autorzy” i tabela „Tytuły” są w relacji <b>wiele-do-wielu</b>, która jest definiowana przez relację jeden-do-wielu z każdej z tych tabel do tabeli „TytułAutorzy”. Kluczem podstawowym tabeli „TytułAutorzy” jest kombinacja kolumny au_ID (klucz podstawowy tabeli „Autorzy”) i kolumny ** title_ID** (klucz podstawowy tabeli „Tytuły”).
+    <p class="p2-a">
+      W relacji <b>jeden-do-jednego</b> wiersz w tabeli A może mieć nie więcej niż jeden pasujący wiersz w tabeli B i odwrotnie. Relacja <b>jeden-do-jednego</b> jest tworzona, jeśli obie kolumny powiązane są kluczami podstawowymi lub mają wyjątkowe ograniczenia.
+      <br><br>
+      Ten rodzaj relacji nie jest powszechny, ponieważ większość informacji, które są związane w ten sposób znajdzie się w jednej tabeli. Relacji <b>jeden-do-jednego</b> można użyć do podjęcia czynności takich jak:
+      podzielenia tabeli z wieloma kolumnami, izolowania część tabeli ze względów bezpieczeństwa, przechowywania danych, które są krótkotrwałe i można je łatwo usunąć, usuwając tabelę, przechowywania informacji, które mają zastosowanie tylko do podzbioru tabeli głównej.
     </p>
   </div>
 </body>
