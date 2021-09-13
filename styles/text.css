@@ -1,0 +1,60 @@
+#main-title h1, h2, h3 {
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+  font-weight: 300;
+}
+
+#main-title h2 {
+  color: rgb(221, 221, 221);
+  font-size: 2em;
+}
+.section h1, .section-a h1 {
+  color: var(--fg);
+  margin-bottom: 2%;
+  font-size: 2.5em;
+  width: 40%;
+  position: relative;
+  text-align: left;
+}
+
+.section h1 {
+  left: 60%;
+  text-align: right;
+}
+
+.section p, .section-a p, .p2, .p2-a {
+  color: rgb(15, 15, 15);
+  font-size: 1.2em;
+  width: 40%;
+  text-align: justify;
+  position: relative;
+  height: 65%;
+  line-height: 1.15em;
+  overflow: scroll;
+}
+
+.section p {
+  left: 60%;
+}
+
+.p2 {
+  margin-left: -60%;
+  margin-top: -20%;
+}
+
+.p2-a {
+  margin-left: 60%;
+  margin-top: -20%;
+}
+.section-b h1 {
+  color: var(--bg);
+  font-size: 3em;
+  margin-bottom: 5%;
+}
+
+.section-b p {
+  padding: 0% 25%;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  color: rgb(255, 255, 255);
+}
