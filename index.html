@@ -57,7 +57,7 @@
       Pojedyncza tabela może być reprezentacją pewnej encji (np. książek, mieszkań, ludzi), relacji między nimi, albo może stanowić zawartość całej bazy danych. Pojedynczy wiersz tabeli nazywany jest rekordem i stanowi najczęściej zbiór danych o pojedynczym obiekcie (ew. grupie obiektów).
     </p>
   </div>
-  <div class="section-a" id="two">
+  <div class="section-a">
     <h1>Kwerendy</h1>
     <p>
       Zapytanie (niekiedy również kwerenda) – czynność polegająca na zbieraniu lub poszukiwaniu informacji w bazach danych.
@@ -82,7 +82,7 @@
       Raport to obiekt bazy danych przydatny do prezentowania informacji z bazy danych w następujących przypadkach: Prezentacja lub rozpowszechnianie podsumowania danych. Archiwizacja migawek danych. Udostępnianie szczegółowych informacji na temat poszczególnych rekordów.
     </p>
   </div>
-  <div class="section" id="one">
+  <div class="section">
     <h1>Klucze</h1>
     <p>
       Jeśli zbiór tworzący klucz jest jednoelementowy to mówi się wtedy o kluczu prostym, w przeciwnym przypadku jest to klucz złożony.
@@ -115,7 +115,7 @@
       Lepszym rozwiązaniem jest przechowywanie informacji wydawcy tylko jeden raz, w osobnej tabeli, którą będziemy nazywać „Wydawcy”. Następnie należy umieścić wskaźnik w tabeli „Tytuły”, który odwołuje się do wpisu w tabeli „Wydawcy”.
     </p>
   </div>
-  <div class="section-a" id="two">
+  <div class="section-a">
     <h1>Rodzaje relacji tabel</h1>
     <p>
       Relacja działa przez dopasowywanie danych w kolumnach kluczy, zwykle kolumn (lub pól), które mają taką samą nazwę w obu tabelach. W większości przypadków relacja łączy klucz podstawowy lub kolumnę unikatowego identyfikatora dla każdego wiersza z jednej tabeli z polem w innej tabeli. Kolumna w drugiej tabeli jest znana jako „klucz obcy”. Na przykład, jeśli chce się śledzić sprzedaż każdego tytułu książki, należy utworzyć relację między kolumną klucza podstawowego (nazwijmy ją title_ID) w tabeli „Tytuły” a kolumną w tabeli „Sprzedaż”, która nosi nazwę title_ID. Kolumna title_ID w tabeli „Sprzedaż” jest kluczem obcym.
@@ -137,7 +137,7 @@
       Podczas tworzenia relacji między tabelami pola pokrewne nie muszą mieć tych samych nazw. Pola pokrewne muszą jednak mieć ten sam typ danych, chyba że pole klucza podstawowego jest polem Autonumerowania. Pole Autonumerowania można dopasować do pola Liczba tylko wtedy, gdy właściwość RozmiarPola obu pasujących pól jest taka sama. Na przykład można dopasować pole Autonumerowania i pole Liczba, jeśli właściwość RozmiarPola dla obu pól to Długa liczba całkowita. Nawet wtedy, gdy oba pasujące pola są polami liczby, muszą mieć takie samo ustawienie właściwości RozmiarPola.
     </p>
   </div>
-  <div class="section-a" id="two">
+  <div class="section-a">
     <h1>Rodzaje relacji tabel</h1>
     <p>
       W relacji <b>wiele-do-wielu</b> wiersz w tabeli A może mieć wiele pasujących wierszy w tabeli B i odwrotnie. Taką relację można utworzyć, definiując trzecią tabelę, która jest nazywana tabelą skrzyżowań. Klucz podstawowy tabeli skrzyżowań składa się z kluczy obcych z tabeli A i tabeli B. Na przykład tabela „Autorzy” i tabela „Tytuły” są w relacji <b>wiele-do-wielu</b>, która jest definiowana przez relację jeden-do-wielu z każdej z tych tabel do tabeli „TytułAutorzy”. Kluczem podstawowym tabeli „TytułAutorzy” jest kombinacja kolumny au_ID (klucz podstawowy tabeli „Autorzy”) i kolumny ** title_ID** (klucz podstawowy tabeli „Tytuły”).
